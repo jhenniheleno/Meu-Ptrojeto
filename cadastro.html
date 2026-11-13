@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Cadastre seu interesse em adoção na ONG Amigo Pet.">
+  <title>Cadastro | Amigo Pet</title>
+  <link rel="stylesheet" href="css/estilo.css">
+  <style>
+    #cadastroAdocao {
+      max-width: 760px;
+      margin: 0 auto;
+    }
+
+    #listaCadastros {
+      margin-top: 24px;
+    }
+  </style>
+</head>
+
+<body>
+  <header class="header">
+    <div class="container navbar">
+      <a class="brand" href="index.html">🐾 Amigo <span>Pet</span></a>
+      <button class="menu-btn" type="button" aria-label="Abrir menu" aria-expanded="false">☰</button>
+      <nav class="nav" aria-label="Navegação principal">
+        <a href="index.html">Início</a><a href="animais.html">Animais</a><a href="cachorro.html">Cachorros</a>
+        <a href="gato.html">Gatos</a><a href="galeria.html">Galeria</a><a href="adocao.html">Como adotar</a>
+        <a href="eventos.html">Eventos</a><a href="sobre.html">Sobre</a><a href="contato.html">Contato</a>
+        <a href="cadastro.html">Cadastro</a><a class="button btn btn-primary" href="ajude.html">♥ Como ajudar</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="page-hero">
+      <div class="container"><span class="eyebrow">Dê o primeiro passo</span>
+        <h1>Cadastro de interesse</h1>
+        <p>Preencha seus dados para registrar seu interesse em conhecer um dos nossos animais.</p>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container">
+        <form id="cadastroAdocao" class="card">
+          <h2>Seus dados</h2>
+          <label for="cadNome">Nome completo</label>
+          <input class="form-control" type="text" id="cadNome" name="nome" minlength="3" pattern="[A-Za-zÀ-ÿ ]{3,}"
+            placeholder="Digite seu nome completo" required>
+          <label for="cadEmail">E-mail</label>
+          <input class="form-control" type="email" id="cadEmail" name="email" placeholder="seuemail@exemplo.com"
+            required>
+          <label for="cadPet">Animal de interesse</label>
+          <select class="form-control" id="cadPet" name="pet" required>
+            <option value="">Selecione um animal</option>
+            <option>Thor</option>
+            <option>Rex</option>
+            <option>Luna</option>
+            <option>Mingau</option>
+            <option>Ainda não escolhi</option>
+          </select>
+          <label for="cadMensagem">Conte um pouco sobre seu interesse</label>
+          <textarea class="form-control" id="cadMensagem" name="mensagem" rows="4" minlength="10"
+            placeholder="Escreva pelo menos 10 caracteres" required></textarea>
+          <button class="button btn btn-primary" type="submit">Salvar cadastro</button>
+          <p id="cadRetorno" class="alert" role="status" aria-live="polite" hidden></p>
+        </form>
+        <section id="listaCadastros" aria-labelledby="tituloCadastros">
+          <h2 id="tituloCadastros">Cadastros salvos neste dispositivo</h2>
+          <p>Os dados ficam armazenados no navegador por meio do localStorage.</p>
+          <div id="cadastrosSalvos"></div>
+        </section>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <h3>🐾 Amigo Pet</h3>
+        <p>Resgate, cuidado e adoção responsável de cães e gatos.</p>
+      </div>
+      <div>
+        <h3>Navegue</h3><a href="index.html">Início</a><a href="animais.html">Animais</a><a
+          href="galeria.html">Galeria</a>
+      </div>
+      <div>
+        <h3>Adoção</h3><a href="adocao.html">Como adotar</a><a href="cadastro.html">Cadastro</a>
+      </div>
+      <div>
+        <h3>Contato</h3>
+        <p>Curitiba – PR</p><a href="contato.html">Fale com a equipe</a>
+      </div>
+    </div>
+    <p class="copy">© 2026 Amigo Pet · Projeto acadêmico</p>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+
+</html>

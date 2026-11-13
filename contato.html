@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Fale com a ONG Amigo Pet sobre adoção, apadrinhamento e voluntariado.">
+  <title>Contato | Amigo Pet</title>
+  <link rel="stylesheet" href="css/estilo.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="container navbar">
+      <a class="brand" href="index.html">🐾 Amigo <span>Pet</span></a>
+      <button class="menu-btn" type="button" aria-label="Abrir menu" aria-expanded="false">☰</button>
+      <nav class="nav" aria-label="Navegação principal">
+        <a href="index.html">Início</a>
+        <a href="animais.html">Animais</a>
+        <a href="cachorro.html">Cachorros</a>
+        <a href="gato.html">Gatos</a>
+        <a href="galeria.html">Galeria</a>
+        <a href="adocao.html">Como adotar</a>
+        <a href="eventos.html">Eventos</a>
+        <a href="sobre.html">Sobre</a>
+        <a href="contato.html">Contato</a>
+        <a href="cadastro.html">Cadastro</a>
+        <a class="button btn btn-primary" href="ajude.html">♥ Como ajudar</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+
+    <section class="page-hero" ">
+      <div class=" container">
+      <span class="eyebrow">Estamos aqui para ajudar</span>
+      <h1>Fale com a gente</h1>
+      <p>Envie sua dúvida sobre adoção, doações ou voluntariado.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container contato">
+        <article class="card shadow-sm">
+          <div class="card-body pad">
+            <h3>Visite a ONG</h3>
+            <p>Rua dos Patudinhos, 147 – Jardim dos Bichos<br>Curitiba – PR</p>
+            <h3 style="margin-top:14px">WhatsApp e telefone</h3>
+            <p>(41) 99123-1234</p>
+            <h3 style="margin-top:14px">E-mail</h3>
+            <p>contato@amigopet.org</p>
+            <h3 style="margin-top:14px">Horário</h3>
+            <p>Terça a domingo, das 9h às 17h</p>
+          </div>
+        </article>
+        <form id="formContato" novalidate>
+          <h3>Envie sua mensagem</h3>
+          <label for="nome">Nome completo</label>
+          <input type="text" id="nome" name="nome" type="text" minlength="3" pattern="[A-Za-zÀ-ÿ ]{3,}"
+            placeholder="Digite seu nome completo" required>
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" type="email" placeholder="seuemail@exemplo.com" required>
+          <label for="assunto">Assunto</label>
+          <select id="assunto" name="assunto" required>
+            <option value="">Selecione</option>
+            <option value="adocao">Quero adotar</option>
+            <option value="ajuda">Quero ajudar</option>
+            <option value="duvida">Outras dúvidas</option>
+          </select>
+          <label for="pet">Animal de interesse (opcional)</label>
+          <select id="pet" name="pet">
+            <option value="">Ainda não escolhi</option>
+            <option>Thor</option>
+            <option>Rex</option>
+            <option>Luna</option>
+            <option>Mingau</option>
+          </select>
+          <label for="mensagem">Mensagem</label>
+          <textarea id="mensagem" name="mensagem" rows="5" minlength="10"
+            placeholder="Escreva sua mensagem (mínimo 10 caracteres)" required></textarea>
+          <button class="button btn btn-primary" type="submit">Enviar mensagem</button>
+          <p id="retorno" role="status"></p>
+        </form>
+      </div>
+    </section>
+
+  </main>
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <h3>🐾 Amigo Pet</h3>
+        <p>ONG dedicada ao resgate, ao cuidado e à adoção responsável de cães e gatos. Cada novo lar é uma vida
+          transformada.</p>
+        <div class="social">
+          <a href="https://instagram.com/" target="_blank" rel="noopener">Instagram</a>
+          <a href="https://facebook.com/" target="_blank" rel="noopener">Facebook</a>
+          <a href="https://youtube.com/" target="_blank" rel="noopener">YouTube</a>
+          <a href="https://wa.me/5541990000000" target="_blank" rel="noopener">WhatsApp</a>
+        </div>
+      </div>
+      <div>
+        <h3>Navegue</h3>
+        <a href="index.html">Início</a>
+        <a href="sobre.html">Sobre nós</a>
+        <a href="eventos.html">Eventos</a>
+        <a href="galeria.html">Galeria</a>
+      </div>
+      <div>
+        <h3>Adoção</h3>
+        <a href="cachorro.html">Cachorros</a>
+        <a href="gato.html">Gatos</a>
+        <a href="adocao.html">Como adotar</a>
+        <a href="ajude.html">Como ajudar</a>
+      </div>
+      <div>
+        <h3>Contato</h3>
+        <p>Rua dos Patudinhos, 147 – Jardim dos Bichos<br>Curitiba – PR</p>
+        <p>(41) 99000-0000<br>contato@amigopet.org</p>
+        <p>Terça a domingo, das 9h às 17h</p>
+      </div>
+    </div>
+    <p class="copy">© 2026 Amigo Pet · Organização sem fins lucrativos · CNPJ 00.000.000/0001-00</p>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
